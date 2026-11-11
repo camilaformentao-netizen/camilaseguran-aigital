@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Segurança Digital - 1º Ano</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #464c4e, #203a43, #9fa0a0);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #167d9a;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #00a8cc;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00a8cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #007d99;
+        }
+
+        /* REFLEXÃO */
+
+        .reflexao {
+            background-color: #e7f8fc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .reflexao p {
+            font-size: 19px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>🔐 Segurança Digital</h1>
+
+        <p>1º Ano do Ensino Médio</p>
+
+        <p>
+            Proteção, privacidade e boas práticas no mundo conectado.
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#tecnologias">Tecnologias</a>
+
+        <a href="#inovacao">Inovação</a>
+
+        <a href="#atividades">Atividades</a>
+
+        <a href="#projeto">Projeto</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="images (8).jpeg"
+                alt="Segurança digital e proteção de dados"
+            >
+
+            <div class="inicio-texto">
+
+                <h2>💡 Bem-vindos!</h2>
+
+                <p>
+                    Segurança digital é o conjunto de cuidados e medidas utilizados para proteger informações pessoais, celulares, computadores e contas na internet contra golpes, vírus, roubos e invasões. Seu objetivo é garantir a privacidade e a proteção dos dados, permitindo que as pessoas utilizem a tecnologia com mais segurança.
+
+
+ 
+                </p>
+
+                <br>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="tecnologias">
+
+        <h2>🛡️ Como se Proteger na Internet</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="images (7).jpeg"
+                    alt="Inteligência Artificial"
+                >
+
+                <h3> Senhas Seguras</h3>
+
+                <p>
+                    Aprenda a criar senhas fortes e diferentes para cada conta.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (11).jpeg"
+                    alt="Robótica"
+                >
+
+                <h3>Phishing e Golpes</h3>
+
+                <p>
+                    Identifique mensagens falsas, links suspeitos e tentativas de fraude.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images.jpeg"
+                    alt="Internet das Coisas"
+                >
+
+                <h3> Privacidade Online</h3>
+
+                <p>
+                    Entenda como proteger seus dados pessoais e controlar o que compartilha.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (2).jpeg"
+                    alt="Realidade Virtual"
+                >
+
+                <h3>Segurança no Celular</h3>
+
+                <p>
+                    Use atualizações, bloqueio de tela e autenticação em duas etapas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INOVAÇÃO -->
+
+    <section id="inovacao">
+
+        <h2>Hábitos para Navegar com Segurança</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3> Proteção de contas e senhas</h3>
+
+                <p>Criar senhas fortes e únicas.
+
+                    Usar autenticação de dois fatores (2FA).
+                    
+                    Evitar compartilhar senhas.
+                    
+                    Utilizar gerenciadores de senhas.
+                    
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Vírus e ameaças digitais</h3>
+
+                <p>
+                    Vírus e malware.
+
+                    Ransomware (sequestro de arquivos).
+                    
+                    Spyware (programas espiões).
+                    
+                    Aplicativos maliciosos.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Golpes na internet</h3>
+
+                <p>
+                    Phishing: mensagens falsas para roubar dados.
+
+                    Golpes pelo WhatsApp.
+                    
+                    Falsas promoções e lojas.
+                    
+                    Links suspeitos.
+                    
+                    Golpes bancários e financeiros. 
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Privacidade e proteção de dados</h3>
+
+                <p>
+                    Como proteger informações pessoais.
+
+                    Cuidados ao usar redes sociais.
+                    
+                    Proteção de fotos e documentos.
+                    
+                    Configurações de privacidade.
+                    
+                    LGPD (Lei Geral de Proteção de Dados). 
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIA E SOCIEDADE -->
+
+    <section>
+
+        <div class="reflexao">
+
+            <h2>Uso consciente da internet </h2>
+
+            <p>O uso consciente da internet consiste em utilizar a tecnologia de maneira responsável, segura e equilibrada. Isso envolve proteger informações pessoais, evitar golpes virtuais, respeitar outras pessoas nas redes sociais, combater notícias falsas e ter cuidado com o que compartilhamos. O objetivo é aproveitar os benefícios da internet sem colocar nossa segurança, privacidade e bem-estar em risco.
+
+
+                .
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATIVIDADES -->
+
+    <section id="atividades">
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETO FINAL -->
+
+    <section id="projeto">
+
+        <div class="projeto">
+
+            <h2> Projeto Final – Campanha de Segurança Digital</h2>
+
+            <p>Concluímos que a internet é uma ferramenta muito importante em nosso dia a dia, mas devemos utilizá-la com responsabilidade, respeito e cuidado. Pequenas atitudes, como proteger nossos dados, verificar informações e respeitar as pessoas, fazem toda a diferença. Lembre-se: a internet é um ótimo lugar para aprender e se comunicar, desde que saibamos usá-la com consciência e segurança!
+
+
+
+            </p>
+
+            <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            🔐 Segurança Digital – 1º Ano do Ensino Médio
+        </p>
+
+        <p>
+            Pensar. Verificar. Proteger. Compartilhar com responsabilidade.
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto Educacional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
